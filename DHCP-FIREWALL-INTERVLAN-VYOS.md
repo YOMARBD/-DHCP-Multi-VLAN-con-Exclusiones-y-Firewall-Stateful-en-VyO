@@ -6,7 +6,9 @@ Implementación de una infraestructura de red segmentada en **GNS3** utilizando 
 
 ## 1. Topología de Red
 
-*()*
+*(<img width="1093" height="612" alt="image" src="https://github.com/user-attachments/assets/619ae4db-dc9a-4b61-900a-6201f5257255" />
+
+)*
 
 ---
 
@@ -112,11 +114,19 @@ save
 ## 5. Verificación y Pruebas de Seguridad
 
 ### Tabla de Concesiones DHCP (`show dhcp server leases`)
-*(Pega aquí con `Ctrl + V` tu captura de `show dhcp server leases` mostrando las 3 IPs activas)*
+*(<img width="1362" height="128" alt="image" src="https://github.com/user-attachments/assets/8c6ac485-6196-4afb-80c7-63466fcdd027" />
+)*
 
 ### Pruebas Cruzadas de Conectividad y Firewall
 * **Desde `PC-DOCENTES` (`10.10.0.10`) hacia Alumnos:** Respuesta exitosa con **`ttl=63`** (permitida por `rule 10`).
 * **Desde `PC-ALUMNOS-1` y `PC-ALUMNOS-2` hacia Docentes (`10.10.0.10`):** **`timeout`** (bloqueada silenciosamente por `rule 20` y `rule 30`).
 * **Entre `PC-ALUMNOS-1` y `PC-ALUMNOS-2`:** Respuesta exitosa con **`ttl=63`** (permitida por `default-action accept`).
 
-*(Pega aquí con `Ctrl + V` tus capturas de las consolas de PC1, PC2 y PC3)*
+*(<img width="978" height="828" alt="image" src="https://github.com/user-attachments/assets/49b81762-70ad-454b-ad4f-8ed63c98c323" />
+)*
+
+<img width="1917" height="705" alt="image" src="https://github.com/user-attachments/assets/2e810f33-3ea9-4997-89b3-fe073ea2dc93" />
+
+<img width="1912" height="770" alt="image" src="https://github.com/user-attachments/assets/66e6cf29-68e0-48d8-abe5-cfd023f90209" />
+
+
